@@ -1,4 +1,3 @@
-import { Sorter } from "./Sorter"
 import { NumbersCollection } from "./NumbersCollection"
 import { CharacterCollection } from "./CharacterCollections"
 import { LinkedList } from "./LinkedList"
@@ -9,4 +8,11 @@ console.log(numberList.data)
 
 const characters = new CharacterCollection("sadqwe")
 characters.sort()
-console.log(characters)
+console.log(characters.data)
+
+const linkedList = new LinkedList()
+linkedList.add(5)
+linkedList.add(2)
+linkedList.add(3)
+linkedList.sort()
+linkedList.print()
